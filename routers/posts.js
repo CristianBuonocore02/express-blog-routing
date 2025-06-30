@@ -18,6 +18,7 @@ router.post('/', (req, res) => {
 
 // PUT /posts/:id → Modifica un post esistente
 router.put('/:id', (req, res) => {
+    const id = req.params.id
     res.send(`Modifica del post ${id}`);
 });
 
